@@ -41,6 +41,9 @@ body {
     text-align: center;
     transition: all 1000ms;
 }
+.text{
+    block-size: 20%;
+}
 
 .content .logo {
     height: 180px;
@@ -49,6 +52,7 @@ body {
 
 .content .title{
     font-size: 1.4rem;
+    text-shadow: 1px 1px rgb(49, 48, 48);      
     margin-top: 1rem;
 }
 

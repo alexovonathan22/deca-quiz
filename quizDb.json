@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username":"",
+      "password":"",
+      "results": [
+        {
+          "S/N":1,
+          "username":"",
+          "scores":0,
+          "Grade":"",
+          "Date":""
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "answers": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "deca-quiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexovonathan22/deca-quiz.git"
+  },
+  "keywords": [
+    "html",
+    "quiz"
+  ],
+  "author": "Alex-Ovo Nathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexovonathan22/deca-quiz/issues"
+  },
+  "homepage": "https://github.com/alexovonathan22/deca-quiz#readme",
+  "dependencies": {
+    "json-server": "^0.15.0"
+  }
+}
