@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Mack",
+      "password": "effifo4"
+    },
+    {
+      "username": "alexovo22ww",
+      "password": "wade22wewe",
+      "id": 2
+    },
+    {
+      "username": "duke123",
+      "password": "weer3",
+      "id": 3
+    },
+    {
+      "username": "duke123",
+      "password": "weer3ww",
+      "id": 4
+    },
+    {
+      "username": "alexovo22Base22",
+      "password": "wade22wutydjkl;",
+      "id": 5
+    },
+    {
+      "username": "alexovo22sa",
+      "password": "wade22dfg",
+      "id": 6
+    },
+    {
+      "username": "mj222",
+      "password": "wade22wdwdw",
+      "id": 7
+    },
+    {
+      "username": "mj222",
+      "password": "wade22wdwdw",
+      "id": 8
+    }
+  ],
+  "qaDb": [
+    {
+      "ques": "uls are called",
+      "a": "listing items",
+      "b": "list items",
+      "c": "unordered lists",
+      "d": "list collection",
+      "ans": "unordered lists",
+      "id": 1
+    },
+    {
+      "ques": "tags are written as",
+      "a": "listing items",
+      "b": "list items",
+      "c": "<li> </li>",
+      "d": "list collection",
+      "ans": "<li> </li>",
+      "id": 2
+    },
+    {
+      "ques": "'id' is a css selector",
+      "a": "listing items",
+      "b": "true",
+      "c": "i disagree",
+      "d": "list collection",
+      "ans": "true",
+      "id": 3
+    },
+    {
+      "ques": "To change background color what do you do?",
+      "a": "background-color: #333;",
+      "b": "bg:blue",
+      "c": "i disagree",
+      "d": "list collection",
+      "ans": "<style>background-color: #333; </style>",
+      "id": 4
+    },
+    {
+      "ques": "lis are called",
+      "a": "listing items",
+      "b": "list items",
+      "c": "list iterate",
+      "d": "list collection",
+      "ans": "list items",
+      "id": 5
+    }
+    
+  ]
+}
