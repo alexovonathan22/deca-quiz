@@ -14,8 +14,8 @@ $(document).ready(function(){
             })
 
     })
-    let urlq = 'http://localhost:3000/qaDb'
-    let quesData = $('#arr');
+    let urlq = 'http://localhost:3000/qaDb';
+    let quesData = $('#quesdata');
     let num = 1;
 
     $.ajax({
@@ -53,17 +53,12 @@ $("#subques").click(function(e){
 
     if(question !== '' && optionA !== ''){
         $.ajax({
-            // dataType: 'json',
+            dataType: 'json',
             type:'POST',
         //    ' Content-Type': 'application/json',
             url: form_action,
             data:{question:question, optionA:optionA, optionB:optionB, optionC:optionC, optionD:optionD, answer:answer}
-        }).done(function(data){
-            // $("#create-item").find("input[name='title']").val('');
-            // $("#create-item").find("textarea[name='description']").val('');
-            // getPageData();
-            // $(".modal").modal('hide');
-            
+        }).done(function(data){            
             
         });
     }else{
@@ -74,48 +69,32 @@ $("#subques").click(function(e){
 });
 
 //view in ui
-let url = 'http://localhost:3000/qaDb'
-    let qData = $('#display');
-
-    $.ajax({
-        type: 'GET',
-        url: url + '/viewpage.html',
-        success: function(questions){
-            $.each(questions, function(question){
-                qData.append(`<li>${question.ques}</li>
-                        <br>
-                            <li>${question.optionA}</li>
-                            <li>${question.optionB}</li>
-                            <li>${question.optionC}</li>
-                            <li>${question.optionD}</li>
-
-                `)
-            })
-            
+let url = 'http://localhost:3000/qaDb';
+let questionId = $('#delete').val()
+    
+    //delete item
+    	$.ajax({
+         url: url+questionId,  
+                    type: 'DELETE',  
+                    dataType: 'json',  
+                    data: questionId,
+        success: function(){
+           
+            $("#deleteBtn").click(function () {    
+                $.ajax({  
+                   
+                    success: function (data) {  
+                       {data.remove()  }
+                    },  
+                    error: function (xhr, textStatus, errorThrown) {  
+                        console.log('Error in Operation');  
+                    }  
+                });  
+            });  
         }
 
     });
 
-    //delete item
-
-    // // $("body").on("click",function(){
-    // //     var id = 
-    // //     var c_obj = $(this).parents("tr");
-    
-    
-    // //     $.ajax({
-    // //         dataType: 'json',
-    // //         type:'POST',
-    // //         url: url + '/deletepage.html',
-    // //         data:{id:id}
-    // //     }).done(function(data){
-    // //         c_obj.remove();
-    // //         toastr.success('Item Deleted Successfully.', 'Success Alert', {timeOut: 5000});
-    // //         getPageData();
-    // //     });
-    
-    
-    // });
     
 
 
@@ -125,22 +104,22 @@ let url = 'http://localhost:3000/qaDb'
 
 }); 
 
-function getQuestionions(){
-    $.ajax({
-        url:"http://localhost:3000/qaDb",
-        method:"GET"
-    }).done(function(data){
-       var str = '';
-       for(var i = 0; i < data.length; i++){
-           str += `<div id="container">
-                <li>${data[i].id}</li>
-                <p>${data[i].ques}</p>
-                <li>${data[i].a}</li>
-                <li>${data[i].b}</li>
-                <li>${data[i].c}</li>
-                <li>${data[i].d}</li>
+// function getQuestionions(){
+//     $.ajax({
+//         url:"http://localhost:3000/qaDb",
+//         method:"GET"
+//     }).done(function(data){
+//        var str = '';
+//        for(var i = 0; i < data.length; i++){
+//            str += `<div id="container">
+//                 <li>${data[i].id}</li>
+//                 <p>${data[i].ques}</p>
+//                 <li>${data[i].a}</li>
+//                 <li>${data[i].b}</li>
+//                 <li>${data[i].c}</li>
+//                 <li>${data[i].d}</li>
                     
-           </div>` 
-       }
-    })
-}
+//            </div>` 
+//        }
+//     })
+// }
