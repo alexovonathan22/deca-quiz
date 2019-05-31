@@ -68,9 +68,17 @@ body {
     padding: 4rem 1rem;
 }
 
+#admin {
+    padding-left: 0;
+    background-color: #FFFFFF;
+    padding: 1rem!important;
+    margin-bottom: 1rem;
+}
+
 .grid-3{
     display: grid;
     grid-gap: 20px;
+    margin: auto;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -93,6 +101,12 @@ body {
 .bg-dark{
     background: #333;
     color: #f4f4f4;
+}
+
+
+
+.row-admin{
+    background: #333;
 }
 
 footer{
@@ -143,4 +157,13 @@ footer p{
     .content{
         top:0;
     }
+}
+
+/*admin panel*/
+.tab-panel .panel .active{
+    display: block;
+}
+.tab-panel .panel{
+    display: none;
+
 }

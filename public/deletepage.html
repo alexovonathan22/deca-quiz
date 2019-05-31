@@ -14,8 +14,31 @@
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  
-  <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Deca-Quiz | { Testing Platform }</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -35,7 +58,7 @@
               <hr class="sidebar-divider my-0">
               <div id="panel1">
                   <li rel="panelid1" class="nav-item active">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="createpage.html">
                         
                         <span>Create Questions</span>
                       </a>
@@ -75,45 +98,25 @@
                     </li>
               </div>
     
-        </ul> 
-             
-                
-       
-    
-        </div>
-        <div class="container">
-            <form id="create-item" method="POST" action="http://localhost:3000/qaDb">
-              <div>
-                <label for="ques">Type In Question</label>
-                <input type="text" name="ques" id="ques" placeholder="question goes here">
-              </div>
-              <div id="options">
-                <label for="ans">Enter Answer options</label><br>
-                <input type="radio" name="A" value="a" id="radio1"> A &nbsp <input type="text"  id="ans1" name="a"> <br>
-                <input type="radio" name="A" value="b" id="radio2"> B &nbsp <input type="text"  id="ans2" name="b"> <br>
-                <input type="radio" name="A" value="c" id="radio3"> C &nbsp <input type="text"  id="ans3" name="c"> <br>
-                <input type="radio" name="A" value="d" id="radio4"> D &nbsp <input type="text"  id="ans4" name="d"> <br>                
-                <!-- <div> <h5>a.</h5> <input type="text"  id="ans1" value="a1"> </div>
-                <div> <h5>b.</h5> <input type="text"  id="ans2" value="a2"> </div>
-                <div> <h5>c.</h5> <input type="text"  id="ans3" value="a3"> </div> -->
-                  <!-- <input type="radio"  id="ans1" value="a1"><input type="text"  id="ans1" value="a1"> 
-                  <input type="radio"  id="ans2" value="a2"><input type="text"  id="ans2" value="a2"> 
-                  <input type="radio"  id="ans3" value="a3"><input type="text"  id="ans3" value="a3">  -->
-                
-              </div>
-              <br>
-              <div>
-                  <input type="text" name="ans" id="ans" placeholder="Answer">
-              </div>
-             
-              <!-- <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div> -->
-              <input type="submit" value="Submit" id="subques">
-            </form>
-        </div>
-        
+        </ul>
+</div>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+
+</body>
+
+</html>
+
 
 
   <!-- Bootstrap core JavaScript-->
